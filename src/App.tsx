@@ -8,17 +8,9 @@ export const columnNames:Array<ITableHeaderCell> = [
   {key: "__lp__", name: "Lp."},
   {key: "name", name: "Name"},
   {key: "username", name: "Username"},
-  {key: "phone", name: "Numer telefonu"},
-  {key: "email", name: "Adres e-mail"},
+  {key: "phone", name: "Phone"},
+  {key: "email", name: "E-mail"},
 ]
-
-export interface IUserData {
-  key?:number
-  name: string,
-  lastname:string,
-  phone:string,
-  email:string
-}
 
 function App() {
   return (
