@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.table {
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+.table td
+{
+  padding: 5px
+}
+
+.table tr:hover
+{
+  background-color: lightgray;
+}
+
+.table-header
+{
+  background-color: rgb(188, 188, 188) !important;
+}
+
+.table-header-cell
+{
+  position:relative;
+}
+
+.table-header-cell span
+{
+  display: inline-block;
+  filter:opacity(0.7)
+}
+
+.table-header-cell span:has(span)
+{
+  margin: 10px;
+}
+
+.table-header-cell span:not(:has(span))
+{
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.sort-selected
+{ 
+  filter:opacity(1) !important;
+}
+
+.sort-rotate
+{
+  transform: rotateZ(180deg) !important;
+}
+
+.filter-selected
+{
+  font-weight: bold;
+  filter: opacity(1) !important;
+}
+
+.table-header-cell input
+{
+  height: 30px;
+  position:absolute;
+  width: 100%;
+  top: -30px; 
+  left:0;
+  display: none;
+  box-sizing: border-box;
+}
+
+.table-header-cell-options:has(.filter-selected) + input 
+{
+  display: block !important;
+}
+
