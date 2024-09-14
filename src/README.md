@@ -1,4 +1,4 @@
-Table with sorting and filtering features in React Native.
+  Table with sorting and filtering features in React JS.
 
 ![image](https://github.com/user-attachments/assets/df294f55-4670-4915-a2c6-d730b9e835cf)
 
